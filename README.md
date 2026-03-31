@@ -1,35 +1,20 @@
-Construction ERP & Finance Management System
-This repository provides the technical overview and architectural design for a desktop-based ERP solution tailored for construction project management.
+# Construction ERP & Finance Management System
 
-Confidentiality: The source code is hosted in a private repository due to commercial sensitivity and ongoing deployment. This documentation outlines the engineering logic and development roadmap.
+**Confidentiality Notice**
+The source code is hosted in a private repository due to commercial sensitivity and ongoing deployment. This documentation outlines the technical framework and engineering logic.
 
-Project Overview
-The system is designed to digitize financial workflows, moving from manual entry to a centralized desktop environment. The primary focus is on data consistency and high-fidelity reporting for construction-specific financial cycles.
+**Project Overview**
+A desktop-based system designed to digitize construction financial workflows and inventory management. The primary focus is on data consistency and high-fidelity reporting for project-specific financial cycles.
 
-Core Functionality
-Financial Ledger: Tracking project-specific expenses, payroll, and cash flow.
+**Technical Stack**
+* Language: TypeScript
+* Environment: Desktop (Cross-platform)
+* Status: Active Development / Alpha Phase
 
-Inventory Control: Monitoring material stocks and warehouse movements.
+**Engineering Decisions**
+* **Type Safety:** TypeScript was selected to ensure financial data integrity and minimize runtime errors in complex accounting modules.
+* **Data Management:** Currently evaluating database solutions with a focus on ACID compliance for financial transactions and future scalability.
+* **Modular Design:** The system is architected to allow the decoupling of the logic layer for future mobile expansion and field data entry.
 
-Automated Reporting: Generating cost-analysis and project status summaries.
-
-Technical Specifications
-Core Language: TypeScript
-
-Environment: Desktop (Cross-platform support is maintained for future mobile expansion).
-
-Current Status: Active Development / Alpha Phase.
-
-Architectural & Design Decisions
-Type Safety for Financial Integrity
-TypeScript was chosen as the primary development language to enforce strict type safety. In a financial context, preventing runtime errors and ensuring data type consistency across complex accounting modules is a priority.
-
-Data Management & Database Evaluation
-The database selection is currently in the evaluation phase. The primary criteria for selection are:
-
-Relational Integrity: Ensuring ACID compliance for financial transactions.
-
-Scalability: The ability to transition the data layer seamlessly from a desktop environment to a cloud-based mobile infrastructure in the near future.
-
-Roadmap: From Desktop to Mobile
-The application is architected with a modular approach. While the current implementation is focused on a robust desktop experience for office-based management, the logic layer is being decoupled to support a future mobile expansion for on-site (field) data entry.
+**Current Focus**
+Finalizing the core reporting engine and optimizing the data persistence layer.
